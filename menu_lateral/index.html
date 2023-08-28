@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu lateral</title>
+    <link
+      rel="shortcut icon"
+      href="./img/application.png"
+      type="image/x-icon"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./cdn/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="./js/main.js"></script>
+  </head>
+  <body>
+
+      <aside class="translate-x-0 w-72 h-[36rem] backdrop-blur-lg rounded-md shadow-lg m-3 fixed">
+        <span class="flex justify-end z-40 m-2 cursor-pointer">
+            <img src="./img/menu.png" alt="menu" class="w-8 h-8" id="btnList">
+        </span>
+      <div class="flex-col justify-center">
+        <span class="m-8">
+          <img
+            src="./img/application.png"
+            alt="logo"
+            class="w-14 h-14 m-auto"
+          />
+          <h2 class="text-cyan-400 text-center mt-3 text-2xl font-semibold animate-pulse">Polyglot</h2>
+        </span>
+        <nav class="bg-white p-3 m-2 rounded-md">
+            <ul class="m-3">
+                <li class="m-3 bg-cyan-200 hover:bg-cyan-400 duration-500 py-1 px-6 rounded-md text-white hover:text-white shadow-md"><a href="#home">Home</a></li>
+                <li class="m-3 bg-cyan-200 hover:bg-cyan-400 duration-500 py-1 px-6 rounded-md text-white hover:text-white shadow-md"><a href="#about">About</a></li>
+                <li class="m-3 bg-cyan-200 hover:bg-cyan-400 duration-500 py-1 px-6 rounded-md text-white hover:text-white shadow-md"><a href="#gallery">Gallery</a></li>
+                <li class="m-3 bg-cyan-200 hover:bg-cyan-400 duration-500 py-1 px-6 rounded-md text-white hover:text-white shadow-md"><a href="#portifolio">Portifolio</a></li>
+                <li class="m-3 bg-cyan-200 hover:bg-cyan-400 duration-500 py-1 px-6 rounded-md text-white hover:text-white shadow-md"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="flex justify-center items-center">
+          <input type="email" class="mx-auto p-2 rounded-md w-52 shadow-lg outline-red-300" placeholder="Digite seu email" required />
+        </div>
+      </div>
+      <div class="flex mt-10 ml-2 gap-2">
+          <div class="w-4 h-4 bg-green-300 rounded-full"></div>
+          <div class="w-4 h-4 bg-yellow-300 rounded-full"></div>
+          <div class="w-4 h-4 bg-red-400 rounded-full"></div>
+        </div>
+    </aside>
+<main>
+    <section class="flex justify-center items-center min-h-screen bg-gray-100 pt-5 bg-[url('./img/banner.jpg')] bg-cover" id="home">
+        <h1 class="text-white">Home</h1>
+    </section>
+    <section class="flex justify-center items-center min-h-screen bg-cyan-200 pt-5 bg-[url('./img/about.jpg')] bg-cover" id="about">
+        <div class="backdrop-blur-lg w-[40rem] p-10 rounded-sm">
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo autem tempore quas voluptatem. Dolore repellendus nemo tenetur veritatis at doloribus deleniti fugiat sint accusamus molestiae! Assumenda vel aliquam id minima.</p>
+        </div>
+    </section>
+    <section class="flex justify-center items-center min-h-screen bg-gray-100 pt-5" id="gallery">
+        <h2>Gallery</h2>
+    </section>
+    <section class="flex justify-center min-h-screen bg-cyan-200 pt-5" id="portifolio">
+        <h2>Portifolio</h2>
+    </section>
+    <section class="flex justify-center items-center min-h-screen bg-gray-100 pt-5  bg-[url('./img/banner.png')] bg-cover" id="contact">
+        <form action="#" class="backdrop-blur-lg rounded-md w-72 h-72 shadow-lg flex justify-center">
+            <div class="flex-col justify-center items-center">
+            <span class="flex justify-center mb-3 my-2">
+                <img src="./img/application.png" alt="logo" class="w-14 h-14 animate-pulse">
+            </span>
+                <input type="text" class="m-1 py-2 px-2 shadow-lg rounded-md w-[16rem] focus:outline-red-300" placeholder="Digite seu nome" required>
+                <input type="email" class="m-1 py-2 px-2 shadow-lg rounded-md w-[16rem] focus:outline-red-300 mt-8 flex mx-auto" placeholder="Digite seu email" required>
+                <input type="submit" value="Submit" class="m-auto flex bg-white px-10 py-1 cursor-pointer mt-10 font-semibold text-cyan-300 rounded-full outline-none">
+            </div>
+        </form>
+    </section>
+</main>
+  </body>
+</html>

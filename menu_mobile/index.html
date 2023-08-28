@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu mobile</title>
+    <link
+      rel="shortcut icon"
+      href="./img/application.png"
+      type="image/x-icon"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./cdn/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="flex">
+      <nav
+        class="flex justify-between items-center w-full h-16 fixed bg-blue-400 p-4"
+      >
+        <span class="flex items-center gap-2">
+          <img src="./img/application.png" alt="logo" class="w-12 h-12" />
+          <h2 class="text-white lg:text-lg md:text-base text-sm animate-pulse">
+            Oliveira.js
+          </h2>
+        </span>
+        <span class="ml-auto lg:hidden md:hidden">
+          <img
+            src="./img/menu.png"
+            alt="menu"
+            class="w-8 h-8 cursor-pointer"
+            id="btnMobile"
+          />
+        </span>
+        <!-- Menu desktop -->
+        <ul class="hidden lg:flex lg:items-center gap-3">
+          <li class="text-white font-serif capitalize"><a href="#">Home</a></li>
+          <li class="text-white font-serif capitalize"><a href="#">About</a></li>
+          <li class="text-white font-serif capitalize"><a href="#">Contact</a></li>
+        </ul>
+        <!-- Menu mobile -->
+        <div class="lg:hidden md:hidden">
+          <ul class=" hidden absolute top-16 left-0 bg-blue-300 shadow-lg w-full transition-opacity duration-700" id="list_mobile">
+            <li class="text-white font-serif capitalize w-32 mb-3 rounded-md hover:bg-blue-200 p-1 px-2 hover:shadow-lg m-4 duration-700"><a href="#">Home</a></li>
+            <li class="text-white font-serif capitalize w-32 mb-3 rounded-md hover:bg-blue-200 p-1 px-2 hover:shadow-lg m-4 duration-700"><a href="#">About</a></li>
+            <li class="text-white font-serif capitalize w-32 mb-3 rounded-md hover:bg-blue-200 p-1 px-2 hover:shadow-lg m-4 duration-700"><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>
