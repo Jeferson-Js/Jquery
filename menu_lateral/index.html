@@ -9,6 +9,7 @@
       href="./img/application.png"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="./css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./cdn/code.jquery.com_jquery-3.7.0.min.js"></script>
     <script src="./js/main.js"></script>
@@ -49,18 +50,92 @@
     </aside>
 <main>
     <section class="flex justify-center items-center min-h-screen bg-gray-100 pt-5 bg-[url('./img/banner.jpg')] bg-cover" id="home">
-        <h1 class="text-white">Home</h1>
+        <h1 class="text-white backdrop-blur-md w-64 rounded-md animate-bounce p-8 text-center">Secret of the languages</h1>
     </section>
     <section class="flex justify-center items-center min-h-screen bg-cyan-200 pt-5 bg-[url('./img/about.jpg')] bg-cover" id="about">
         <div class="backdrop-blur-lg w-[40rem] p-10 rounded-sm">
             <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo autem tempore quas voluptatem. Dolore repellendus nemo tenetur veritatis at doloribus deleniti fugiat sint accusamus molestiae! Assumenda vel aliquam id minima.</p>
         </div>
     </section>
-    <section class="flex justify-center items-center min-h-screen bg-gray-100 pt-5" id="gallery">
-        <h2>Gallery</h2>
+    <section class="flex justify-center min-h-screen bg-gray-100 pt-5" id="gallery">
+        <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1">
+            <div class="m-2 bg-purple-300 rounded-md">
+                <img src="./img/franca.webp" alt="frança" class="w-full h-[11rem]">
+                <p class="text-center text-white p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores amet beatae nam est repellendus eaque? Earum nulla vel debitis dolorum maxime possimus.</p>
+            </div>
+            <div class="m-2 bg-purple-300 rounded-md">
+                <img src="./img/unidos.webp" alt="Estados unidos" class="w-full h-[11rem]">
+                <p class="text-center text-white p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores amet beatae nam est repellendus eaque? Earum nulla vel debitis dolorum maxime possimus.</p>
+            </div>
+            <div class="m-2 bg-purple-300 rounded-md">
+                <img src="./img/espanha.webp" alt="espanha" class="w-full h-[11rem]">
+                <p class="text-center text-white p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores amet beatae nam est repellendus eaque? Earum nulla vel debitis dolorum maxime possimus.</p>
+            </div>
+            <div class="m-2 bg-purple-300 rounded-md">
+                <img src="./img/german.webp" alt="german" class="w-full h-[11rem]">
+                <p class="text-center text-white p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores amet beatae nam est repellendus eaque? Earum nulla vel debitis dolorum maxime possimus.</p>
+            </div>
+            <div class="m-2 bg-purple-300 rounded-md">
+                <img src="./img/iran.webp" alt="iran" class="w-full h-[11rem]">
+                <p class="text-center text-white p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores amet beatae nam est repellendus eaque? Earum nulla vel debitis dolorum maxime possimus.</p>
+            </div>
+            <div class="m-2 bg-purple-300 rounded-md">
+                <img src="./img/libano.webp" alt="libano" class="w-full h-[11rem]">
+                <p class="text-center text-white p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores amet beatae nam est repellendus eaque? Earum nulla vel debitis dolorum maxime possimus.</p>
+            </div>
+            <div class="m-2 bg-purple-300 rounded-md">
+                <img src="./img/africa.webp" alt="africa" class="w-full h-[11rem]">
+                <p class="text-center text-white p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores amet beatae nam est repellendus eaque? Earum nulla vel debitis dolorum maxime possimus.</p>
+            </div>
+            <div class="m-2 bg-purple-300 rounded-md shadow-lg">
+                <img src="./img/china.webp" alt="china" class="w-full h-[11rem]">
+                <p class="text-center text-white p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores amet beatae nam est repellendus eaque? Earum nulla vel debitis dolorum maxime possimus.</p>
+            </div>
+        </div>
     </section>
-    <section class="flex justify-center min-h-screen bg-cyan-200 pt-5" id="portifolio">
-        <h2>Portifolio</h2>
+    <section class="flex justify-center min-h-screen bg-cyan-200 pt-5 bg-[url('./img/portifolio.jpg')] bg-cover" id="portifolio">
+       <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1">
+        <div class="w-64 h-72 rounded-md shadow-lg  backdrop-blur p-3 mb-3 m-3">
+            <h3 class="text-white text-center bg-green-300 rounded-md">Cards</h3>
+            <p class="text-center text-white px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, eaque placeat. Quisquam, est, obcaecati iusto tenetur labore praesentium provident sed doloribus, perspiciatis consequatur earum quas perferendis fuga quis autem enim.</p>
+            <button class="bg-white py-1 px-8 rounded-md shadow-lg mx-auto mt-3 flex mx-auto hover:bg-green-300 duration-500 hover:text-white">Saber mais</button>
+        </div>
+        <div class="w-64 h-72 rounded-md shadow-lg  backdrop-blur p-3">
+            <h3 class="text-white text-center bg-green-300 rounded-md">Cards</h3>
+            <p class="text-center text-white px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, eaque placeat. Quisquam, est, obcaecati iusto tenetur labore praesentium provident sed doloribus, perspiciatis consequatur earum quas perferendis fuga quis autem enim.</p>
+            <button class="bg-white py-1 px-8 rounded-md shadow-lg mx-auto mt-3 flex mx-auto hover:bg-green-300 duration-500 hover:text-white">Saber mais</button>
+        </div>
+        <div class="w-64 h-72 rounded-md shadow-lg  backdrop-blur p-3">
+            <h3 class="text-white text-center bg-green-300 rounded-md">Cards</h3>
+            <p class="text-center text-white px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, eaque placeat. Quisquam, est, obcaecati iusto tenetur labore praesentium provident sed doloribus, perspiciatis consequatur earum quas perferendis fuga quis autem enim.</p>
+            <button class="bg-white py-1 px-8 rounded-md shadow-lg mx-auto mt-3 flex mx-auto hover:bg-green-300 duration-500 hover:text-white">Saber mais</button>
+        </div>
+        <div class="w-64 h-72 rounded-md shadow-lg  backdrop-blur p-3">
+            <h3 class="text-white text-center bg-green-300 rounded-md">Cards</h3>
+            <p class="text-center text-white px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, eaque placeat. Quisquam, est, obcaecati iusto tenetur labore praesentium provident sed doloribus, perspiciatis consequatur earum quas perferendis fuga quis autem enim.</p>
+            <button class="bg-white py-1 px-8 rounded-md shadow-lg mx-auto mt-3 flex mx-auto hover:bg-green-300 duration-500 hover:text-white">Saber mais</button>
+        </div>
+        <div class="w-64 h-72 rounded-md shadow-lg  backdrop-blur p-3">
+            <h3 class="text-white text-center bg-green-300 rounded-md">Cards</h3>
+            <p class="text-center text-white px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, eaque placeat. Quisquam, est, obcaecati iusto tenetur labore praesentium provident sed doloribus, perspiciatis consequatur earum quas perferendis fuga quis autem enim.</p>
+            <button class="bg-white py-1 px-8 rounded-md shadow-lg mx-auto mt-3 flex mx-auto hover:bg-green-300 duration-500 hover:text-white">Saber mais</button>
+        </div>
+        <div class="w-64 h-72 rounded-md shadow-lg  backdrop-blur p-3">
+            <h3 class="text-white text-center bg-green-300 rounded-md">Cards</h3>
+            <p class="text-center text-white px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, eaque placeat. Quisquam, est, obcaecati iusto tenetur labore praesentium provident sed doloribus, perspiciatis consequatur earum quas perferendis fuga quis autem enim.</p>
+            <button class="bg-white py-1 px-8 rounded-md shadow-lg mx-auto mt-3 flex mx-auto hover:bg-green-300 duration-500 hover:text-white">Saber mais</button>
+        </div>
+        <div class="w-64 h-72 rounded-md shadow-lg  backdrop-blur p-3">
+            <h3 class="text-white text-center bg-green-300 rounded-md">Cards</h3>
+            <p class="text-center text-white px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, eaque placeat. Quisquam, est, obcaecati iusto tenetur labore praesentium provident sed doloribus, perspiciatis consequatur earum quas perferendis fuga quis autem enim.</p>
+            <button class="bg-white py-1 px-8 rounded-md shadow-lg mx-auto mt-3 flex mx-auto hover:bg-green-300 duration-500 hover:text-white">Saber mais</button>
+        </div>
+        <div class="w-64 h-72 rounded-md shadow-lg  backdrop-blur p-3">
+            <h3 class="text-white text-center bg-green-300 rounded-md">Cards</h3>
+            <p class="text-center text-white px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, eaque placeat. Quisquam, est, obcaecati iusto tenetur labore praesentium provident sed doloribus, perspiciatis consequatur earum quas perferendis fuga quis autem enim.</p>
+            <button class="bg-white py-1 px-8 rounded-md shadow-lg mx-auto mt-3 flex mx-auto hover:bg-green-300 duration-500 hover:text-white">Saber mais</button>
+        </div>
+       </div>
     </section>
     <section class="flex justify-center items-center min-h-screen bg-gray-100 pt-5  bg-[url('./img/banner.png')] bg-cover" id="contact">
         <form action="#" class="backdrop-blur-lg rounded-md w-72 h-72 shadow-lg flex justify-center">
@@ -75,5 +150,10 @@
         </form>
     </section>
 </main>
+<footer class="bg-white w-full h-16 flex justify-center items-center">
+    <p>
+        All rights reservd &copy; Oliveira.js 
+    </p>
+</footer>
   </body>
 </html>
